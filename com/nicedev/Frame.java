@@ -5,7 +5,6 @@ import java.awt.*;
 
 public class Frame extends JFrame {
     public Frame() throws HeadlessException {
-        //super();
         setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
         setTitle("Snake");
         setResizable(false);
@@ -19,6 +18,5 @@ public class Frame extends JFrame {
         pack();
         setLocationRelativeTo(null);
         setVisible(true);
-
     }
 }

@@ -11,14 +11,18 @@ public class BodyPart {
         height = tileSize;
     }
 
-    public void tick() {
-
-    }
-
     public void draw(Graphics graphics) {
         graphics.setColor(Color.BLACK);
-        graphics.fillRect(xCoor*weight, yCoor*height, weight, height);
+        graphics.fillRect(xCoor * weight, yCoor * height, weight, height);
         graphics.setColor(Color.GREEN);
-        graphics.fillRect(xCoor*weight + 2, yCoor*weight + 2, weight - 4, height - 4);
+        graphics.fillRect(xCoor * weight + 2, yCoor * weight + 2, weight - 4, height - 4);
+    }
+
+    public int getxCoor() {
+        return xCoor;
+    }
+
+    public int getyCoor() {
+        return yCoor;
     }
 }
